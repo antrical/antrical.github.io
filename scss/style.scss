@@ -24,14 +24,22 @@
   
 }
 
+@mixin img-look{
+  height: 200px;
+  width: 200px;
+  display: block;
+  border-radius: 50%;
+}
+
 .mail {
   text-decoration: none;
   color:$text-color;
 
 }
+
 .mail:hover {
   color:$primary-color;
-}
+} 
 
 
 //styling för utbildningsboxen 
@@ -44,15 +52,11 @@
   @include flexProject;
 
   img{
-   height: 180px;
-  width: 180px;
-  border-radius: 50%;
-  display: block;
+  @include img-look; 
   flex-direction: column;
   
   }
 }
-
 
 //Styling för kontaktrutan
 .contact-div {
@@ -78,28 +82,23 @@ body {
 
     h1{color:$text-color;
       display: flex;
-      text-align: center;
-    h1:hover {
-      color:pink;
-    }}
+      text-align: center }
+        nav {
+        padding: 10px;
+  
+          a{display: block;
+          text-align: center;
+          width: 50%;
+          margin: auto;   
+          color: $box-color;  
+          font-size: 18px;
+          padding: 6px;
+          margin-bottom: 5px;
+          text-decoration: none;}
+  }
+  
    
 } 
-
-
-
-nav {
-    padding: 10px;
-
-    a{ display: block;
-      text-align: center;
-      width: 50%;
-      margin: auto;   
-      color:#ACAEC5; 
-      font-size: 18px;
-      padding: 6px;
-      margin-bottom: 5px;
-      text-decoration: none;}
-}
 
 
 
@@ -116,10 +115,12 @@ nav {
   }
   
  
+  //Styling av mina knappar (LinkedIn, GitHub & CV)
 
   .button-wrapper {
     display: flex;
     flex-direction: column;
+
     a{margin-bottom: 5px;}
     .button { background-color:$text-color;
       color: $primary-color;
@@ -131,13 +132,11 @@ nav {
     }
 
 
-
-
 /* Här är styling som gäller för alla rubriker och texter */
 
 h1 {
   margin: 20px;
-  font-size: 65px;
+  font-size: 55px;
 }
 
 h2 {
@@ -167,16 +166,10 @@ p {
   text-align: center;
  
 img{
-  border-radius: 50%;
-  display: block;
-  margin: 0 auto;
-  height: 200px;
-  width: 200px;
+  @include img-look;
+  margin: 0 auto;}
 
 }
-
-}
-
 
 
 
@@ -188,8 +181,7 @@ footer {
   
 }
 
-//Nedan gör så den fungerar i chrome 
-@media only screen and (min-width: 1000px) {
+/* @media only screen and (min-width: 1000px) {
     .container {
         display: flex;
         margin-right: 10px;
@@ -199,17 +191,19 @@ footer {
         display:block;
     }
   
-} 
+}  */
+
+
  
  
     @media only screen and (min-width: 700px) {
         .container {
             display: flex;   
-            margin-right: 10px;
+    
         }
    
 
-     //Styling av navbar i min header
+     ///////////* Styling av navbar i min header *///////////
         header {
             background-color: rgba(255,255,255,.5);
            
@@ -218,19 +212,20 @@ footer {
 
               nav { padding: 10px;
 
-                a{ display: inline;
+                a{ display: inline; //Höjd och bredd har ingen effekt med inline
                   padding: 15px;
                   margin-right: 10px;
-                  }}
-        } 
+                  }
+                }
+               } 
        
            
     
               .button-wrapper {
-                display:block;
+                display:block; //Det börjar på en ny rad och tar upp hela breddenh
               }
+
               .project-wrapper {
-               
                 display: flex;
                 flex-direction: row;
               

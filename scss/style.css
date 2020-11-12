@@ -39,10 +39,10 @@
 }
 
 .project-wrapper img {
-  height: 180px;
-  width: 180px;
-  border-radius: 50%;
+  height: 200px;
+  width: 200px;
   display: block;
+  border-radius: 50%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -82,15 +82,11 @@ header h1 {
   text-align: center;
 }
 
-header h1 h1:hover {
-  color: pink;
-}
-
-nav {
+header nav {
   padding: 10px;
 }
 
-nav a {
+header nav a {
   display: block;
   text-align: center;
   width: 50%;
@@ -140,7 +136,7 @@ nav a {
 /* Här är styling som gäller för alla rubriker och texter */
 h1 {
   margin: 20px;
-  font-size: 65px;
+  font-size: 55px;
 }
 
 h2 {
@@ -169,11 +165,11 @@ p {
 }
 
 .about-me img {
-  border-radius: 50%;
-  display: block;
-  margin: 0 auto;
   height: 200px;
   width: 200px;
+  display: block;
+  border-radius: 50%;
+  margin: 0 auto;
 }
 
 /* Här är styling för footern på sidan */
@@ -182,24 +178,22 @@ footer {
   padding: 50px 100px;
 }
 
-@media only screen and (min-width: 1000px) {
-  .container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-right: 10px;
-  }
-  .about-me {
-    display: block;
-  }
-}
+/* @media only screen and (min-width: 1000px) {
+    .container {
+        display: flex;
+        margin-right: 10px;
+    }
 
+    .about-me {
+        display:block;
+    }
+  
+}  */
 @media only screen and (min-width: 700px) {
   .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-right: 10px;
   }
   header {
     background-color: rgba(255, 255, 255, 0.5);
