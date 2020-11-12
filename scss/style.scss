@@ -1,56 +1,63 @@
 @import "_variables.scss";
 
-@mixin flexCenter {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@mixin flexProject {
+  background-color: $box-color;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  max-width: 100%;
+  display:flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 
 }
 
+//Återanvänder till mina infoboxar till hemsidan
 @mixin contentDiv{
   background-color: $box-color;
   color: $text-color;
   border-radius: 10px;
   padding: 20px;
   margin: 20px;
+  max-width: 100%;
+  
 }
 
+.mail {
+  text-decoration: none;
+  color:$text-color;
+
+}
+.mail:hover {
+  color:$primary-color;
+}
+
+
+//styling för utbildningsboxen 
 #content-div {
   @include contentDiv ;
   
 }
+//Styling för mina projetk  
+.project-wrapper {
+  @include flexProject;
 
-/*  Tre box där jag bifogat mina projekt */
-.card-wrapper {
-  @include contentDiv ; 
-   display: grid;
-   grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-   grid-gap: 20px;
-
-}
-
-//Ligger inne i Card-wrapper
-.card-div {
-  @include contentDiv ;
-  @include flexCenter;
-  background-color: #DDA6B9;
-  margin:auto;
+  img{
+   height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  display: block;
+  flex-direction: column;
   
+  }
 }
 
-.card-div > img {
-  max-width: 50%;
-  height: auto;
-} 
-//OVAN KAN NÄSTLAS !!!
 
-
-//Styling för utbildning rutan
+//Styling för kontaktrutan
 .contact-div {
   @include contentDiv ;
 }
-
 
 
 
@@ -71,7 +78,10 @@ body {
 
     h1{color:$text-color;
       display: flex;
-      text-align: center;}
+      text-align: center;
+    h1:hover {
+      color:pink;
+    }}
    
 } 
 
@@ -98,15 +108,14 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
+
+//Padding på toppen för att förhindra plötslig snabb förflyttning
+    .content {
+      padding-top: 60px;
+    }
   }
   
-
-/*   --------------------testa nästla nedan med ovan --------------------- */
-  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-  .sticky + .content {
-    padding-top: 60px;
-  }
-
+ 
 
   .button-wrapper {
     display: flex;
@@ -120,18 +129,6 @@ nav {
       text-decoration: none;
       font-weight: 600;}
     }
-
-/* .button {   
-  background-color:$text-color;
-  color: $primary-color;
-  padding: 25px;
-  border-radius: 30px;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: 600;
-}
- */
-
 
 
 
@@ -164,86 +161,34 @@ p {
 /* Här är styling för about-me sektionen */
 
 .about-me {
-  background-color: /* #ff726c; */ #DDA6B9;
- padding: 150px 30px; 
+  background-color: $primary-color;
+  padding: 150px 30px; 
   color:$text-color;
   text-align: center;
-}
-
-/* Här är styling för bilden som ligger i about-me sektionen */
-
-.about-me img {
-  width: 180px;
+ 
+img{
   border-radius: 50%;
   display: block;
   margin: 0 auto;
+  height: 200px;
+  width: 200px;
+
 }
 
-/* Här är styling för greatness sektionen */
-
-.greatness {
-  padding: 150px 30px;
-  width: 60%;
-  margin: 0 auto;
 }
 
 
-@media only screen and (min-width: 1000px) {
-    #education {
-        display: grid;
-        grid-template-columns: 50% 50%;
-    
-    }
-
-   
-}
 
 
 /* Här är styling för footern på sidan */
 
 footer {
-  background-color: /* #fbcfcd */ #DDA6B9; 
+  background-color: $primary-color;
   padding: 50px 100px;
   
 }
- 
-//Nedan tillhörde gamla card html
-/* .card {
-  @include contentDiv ;
-    max-width: 50%;
-    background-color: #E2BAB1;
-    margin: 60px;
-}
 
-.card > img {
-    max-width: 100%;
-    height: auto;
-}
-.card h1 {
-    font-size: 1.5rem;
-}
-.card p {
-    font-size: 1rem;
-    color:$text-color;
-   
-}
-
-.card > .text {
-    padding: 0px 20px 20px;
-    color:$text-color;
-} */
-
-/* .grid-wrapper button{
-    background-color:$text-color;
-    color: #E2BAB1;
-    padding: 15px;
-    border-radius: 20px;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: 600;
-} */
-
-  
+//Nedan gör så den fungerar i chrome 
 @media only screen and (min-width: 1000px) {
     .container {
         display: flex;
@@ -254,60 +199,47 @@ footer {
         display:block;
     }
   
-}
+} 
  
  
     @media only screen and (min-width: 700px) {
         .container {
-           /*  display: flex;
-            max-width: 1200px;
-            margin: auto; */
-            display: flex;
-           
+            display: flex;   
             margin-right: 10px;
         }
-     /*   -------------------HÄR NEDAN KAN JAG NÄSTLA--------------------- */
+   
+
+     //Styling av navbar i min header
         header {
             background-color: rgba(255,255,255,.5);
            
-        } 
-        header a {
-            width: 20%;
-            margin-top: 20px;
-            }
-            
-            header .site-logo {
-                margin: 0;
-                width: 40%;
-            }
-            
-            header nav {
-                padding: 10px;
+            a{width: 20%;
+              margin-top: 20px;}
+
+              nav { padding: 10px;
 
                 a{ display: inline;
                   padding: 15px;
                   margin-right: 10px;
-                  }
-  
-            }
-
-
-          /*   -------------------HÄR OVAN KAN JAG NÄSTLA--------------------- */
-      
-          
-          
-
+                  }}
+        } 
+       
+           
+    
               .button-wrapper {
                 display:block;
               }
+              .project-wrapper {
+               
+                display: flex;
+                flex-direction: row;
+              
+                }
 
-              .card-wrapper{
-                display: auto;
+
               }
-
              
-            } 
-
-
             
+
+  
 

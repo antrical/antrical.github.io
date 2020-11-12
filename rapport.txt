@@ -1,4 +1,6 @@
-I ditt repo ska det finnas en rapport.txt (jag kommer att kolla era repon genom VS Code och vill slippa öppna Word eller liknande) där du beskriver Scrum, grafisk profil och tillgänglighet så att jag kan se att du förstår dessa begrepp.
+::::::::::::
+:: SCRUM :::
+::::::::::::
 
 Scrum är ett ramverk för att jobba med agil utveckling.
 Agil utveckling handlar bland annat om att ha en regelbunden kommunkation, utvärdering i varje steg man gör i ett projekt, man följer inte traditionella deadlines på samma sätt.
@@ -19,7 +21,9 @@ Utvecklingsteamet -Teamet är en självorganiserande enhet med komptens att utve
 
 
 
-Grafisk profil
+:::::::::::::::::::
+:: Grafisk profil::
+:::::::::::::::::::
 
 Det är en typ av manual för hur ett företag ska marknadsföras, associeras till, hur ett företag eller organisation vill kommunicera. 
 Det finns olika typer av grafisk profil, vissa företag har sin grafiska profil på hemsidan som man kan ladda ner deras logotyper, accentfärger, textfärger etc. 
@@ -27,4 +31,17 @@ Det finns olika typer av grafisk profil, vissa företag har sin grafiska profil 
 Manuallen kan innehålla logotyp i olika utföranden för att den som jobbar med den profilen ska anpasssa loggan till olika användningsområden. Några färger som symboliserar företaget, gärna en accentfärg, textfärg, backgrundsfärg. Vilken typsnitt man vill ha på hemsidan och eventuella mönster, grafiska element eller symboler. 
 
 
-Tillgänglighetskrav.
+
+:::::::::::::::::::::::::
+:: Tillgänglighetskrav ::
+:::::::::::::::::::::::::
+
+WCAG-kriteriet 3.1.1
+- "sv" i lang i html filen.
+
+WCAG-kriteriet 2.4.4 - Skriv tydliga länkar
+TBC
+
+WCAG-kriteriet 2.4.3
+Gör en logisk tab-ordning
+Min hemsida görs i rätt tab-ordning

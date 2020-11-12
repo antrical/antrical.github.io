@@ -1,52 +1,52 @@
 @charset "UTF-8";
+.mail {
+  text-decoration: none;
+  color: #fff;
+}
+
+.mail:hover {
+  color: #DDA6B9;
+}
+
 #content-div {
   background-color: #ACAEC5;
   color: #fff;
   border-radius: 10px;
   padding: 20px;
   margin: 20px;
+  max-width: 100%;
 }
 
-/*  Tre box där jag bifogat mina projekt */
-.card-wrapper {
+.project-wrapper {
   background-color: #ACAEC5;
-  color: #fff;
   border-radius: 10px;
   padding: 20px;
   margin: 20px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (minmax(350px, 1fr))[auto-fill];
-      grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-  grid-gap: 20px;
-}
-
-.card-div {
-  background-color: #ACAEC5;
-  color: #fff;
-  border-radius: 10px;
-  padding: 20px;
-  margin: 20px;
+  max-width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #DDA6B9;
-  margin: auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.card-div > img {
-  max-width: 50%;
-  height: auto;
+.project-wrapper img {
+  height: 180px;
+  width: 180px;
+  border-radius: 50%;
+  display: block;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .contact-div {
@@ -55,6 +55,7 @@
   border-radius: 10px;
   padding: 20px;
   margin: 20px;
+  max-width: 100%;
 }
 
 /* Här är styling som gäller för hela sidan */
@@ -81,6 +82,10 @@ header h1 {
   text-align: center;
 }
 
+header h1 h1:hover {
+  color: pink;
+}
+
 nav {
   padding: 10px;
 }
@@ -104,9 +109,7 @@ nav a {
   width: 100%;
 }
 
-/*   --------------------testa nästla nedan med ovan --------------------- */
-/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
-.sticky + .content {
+.sticky .content {
   padding-top: 60px;
 }
 
@@ -134,16 +137,6 @@ nav a {
   font-weight: 600;
 }
 
-/* .button {   
-  background-color:$text-color;
-  color: $primary-color;
-  padding: 25px;
-  border-radius: 30px;
-  text-transform: uppercase;
-  text-decoration: none;
-  font-weight: 600;
-}
- */
 /* Här är styling som gäller för alla rubriker och texter */
 h1 {
   margin: 20px;
@@ -175,28 +168,12 @@ p {
   text-align: center;
 }
 
-/* Här är styling för bilden som ligger i about-me sektionen */
 .about-me img {
-  width: 180px;
   border-radius: 50%;
   display: block;
   margin: 0 auto;
-}
-
-/* Här är styling för greatness sektionen */
-.greatness {
-  padding: 150px 30px;
-  width: 60%;
-  margin: 0 auto;
-}
-
-@media only screen and (min-width: 1000px) {
-  #education {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 50% 50%;
-        grid-template-columns: 50% 50%;
-  }
+  height: 200px;
+  width: 200px;
 }
 
 /* Här är styling för footern på sidan */
@@ -205,39 +182,6 @@ footer {
   padding: 50px 100px;
 }
 
-/* .card {
-  @include contentDiv ;
-    max-width: 50%;
-    background-color: #E2BAB1;
-    margin: 60px;
-}
-
-.card > img {
-    max-width: 100%;
-    height: auto;
-}
-.card h1 {
-    font-size: 1.5rem;
-}
-.card p {
-    font-size: 1rem;
-    color:$text-color;
-   
-}
-
-.card > .text {
-    padding: 0px 20px 20px;
-    color:$text-color;
-} */
-/* .grid-wrapper button{
-    background-color:$text-color;
-    color: #E2BAB1;
-    padding: 15px;
-    border-radius: 20px;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: 600;
-} */
 @media only screen and (min-width: 1000px) {
   .container {
     display: -webkit-box;
@@ -252,25 +196,17 @@ footer {
 
 @media only screen and (min-width: 700px) {
   .container {
-    /*  display: flex;
-            max-width: 1200px;
-            margin: auto; */
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin-right: 10px;
   }
-  /*   -------------------HÄR NEDAN KAN JAG NÄSTLA--------------------- */
   header {
     background-color: rgba(255, 255, 255, 0.5);
   }
   header a {
     width: 20%;
     margin-top: 20px;
-  }
-  header .site-logo {
-    margin: 0;
-    width: 40%;
   }
   header nav {
     padding: 10px;
@@ -280,12 +216,17 @@ footer {
     padding: 15px;
     margin-right: 10px;
   }
-  /*   -------------------HÄR OVAN KAN JAG NÄSTLA--------------------- */
   .button-wrapper {
     display: block;
   }
-  .card-wrapper {
-    display: auto;
+  .project-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,13 +1,14 @@
-// When the user scrolls the page, execute myFunction
+// Vid scrollning utförs funktionen myFunction
 window.onscroll = function() {myFunction()};
 
-// Get the navbar
-var navbar = document.getElementById("navbar");
+// Hämtar min navbar
+let navbar = document.getElementById("navbar");
 
-// Get the offset position of the navbar
-var sticky = navbar.offsetTop;
+//Hämta navbarens "offset" positionen 
+let sticky = navbar.offsetTop;
 
-// Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+//Lägger till Sticky Position när man scrollar annars avslutas Sticky Position
+
 function myFunction() {
   if (window.pageYOffset >= sticky) {
     navbar.classList.add("sticky")
