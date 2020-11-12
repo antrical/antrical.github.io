@@ -1,0 +1,30 @@
+I ditt repo ska det finnas en rapport.txt (jag kommer att kolla era repon genom VS Code och vill slippa öppna Word eller liknande) där du beskriver Scrum, grafisk profil och tillgänglighet så att jag kan se att du förstår dessa begrepp.
+
+Scrum är ett ramverk för att jobba med agil utveckling.
+Agil utveckling handlar bland annat om att ha en regelbunden kommunkation, utvärdering i varje steg man gör i ett projekt, man följer inte traditionella deadlines på samma sätt.
+
+Ett exempel är att man har dagliga scrum-möten, s.k. Daily standup, korta avstämningsmöten som oftast sker stående för att det inte ska bli allt för långa diskusssioner. Max 15 minuter långa. Är det någon som fastnat med ett problem då finns det oftast någon annan som kan lösa det och det tar man då efter det korta mötet. 
+Scrum Master och Produktägare får vara med på möterna utan att ha en aktiv roll. 
+
+Projektet eller arbetet är uppdelat i sprintar, iterationer. En sprint är alltid tidsbestämt, kan vara 2,3 veckor beror på projektet. Fördelar med korta sprintar är lättare att överblicka än en längre, det går smidigare att fatta beslut och göra ändringar om man märker att något fallerar i projektet, detta påverkar ekonomin posetivt eftersom större förädningar som plötsligt sker efter långa perioder kan påverka ekonomi/budget negativt. Det är lättare att ha koll på hela projektprocessen. 
+
+Det finns tre roller att ha koll på: Produktägare, Scrum Master och Utvecklingsteamet.
+
+Scrum Master - ska effektiversa processen genom att bestämma cermonier, möten för att arbetetet ska flöda, spindeln i nätet. Det är Scrum Master som ska hålla i dom dagliga scrum möten. Oftast blir en projektledare på arbetsplatsen en Scrum Master. 
+
+Produktägare - har ansvar för prioriteringen över vad som ska göras och när, PO tar emot, hanterar och prioriterar önskemål om tillägg och ändringar för en produkt.
+När vi pratar agilt, pratar man oftast om backlog som är en lista med allt man kan tänkas ha med i ett projekt. Listan är sorterad efter förväntat affärsvärde. Det är endast produktägaren som ansvarar för prioriteringen i listan. 
+
+Utvecklingsteamet -Teamet är en självorganiserande enhet med komptens att utveckla slutprodukten. 
+
+
+
+Grafisk profil
+
+Det är en typ av manual för hur ett företag ska marknadsföras, associeras till, hur ett företag eller organisation vill kommunicera. 
+Det finns olika typer av grafisk profil, vissa företag har sin grafiska profil på hemsidan som man kan ladda ner deras logotyper, accentfärger, textfärger etc. 
+
+Manuallen kan innehålla logotyp i olika utföranden för att den som jobbar med den profilen ska anpasssa loggan till olika användningsområden. Några färger som symboliserar företaget, gärna en accentfärg, textfärg, backgrundsfärg. Vilken typsnitt man vill ha på hemsidan och eventuella mönster, grafiska element eller symboler. 
+
+
+Tillgänglighetskrav.
