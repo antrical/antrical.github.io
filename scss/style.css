@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/* Återanvänder till mina infoboxar till hemsidan */
+/* Styling av min mail länk */
 .mail {
   text-decoration: none;
   color: #fff;
@@ -8,6 +10,7 @@
   color: #DDA6B9;
 }
 
+/* styling för utbildningsboxen  */
 #content-div {
   background-color: #ACAEC5;
   color: #fff;
@@ -17,6 +20,7 @@
   max-width: 100%;
 }
 
+/* Styling för mina projetk */
 .project-wrapper {
   background-color: #ACAEC5;
   border-radius: 10px;
@@ -49,6 +53,7 @@
           flex-direction: column;
 }
 
+/* Styling för kontaktrutan */
 .contact-div {
   background-color: #ACAEC5;
   color: #fff;
@@ -67,6 +72,29 @@ body {
   font-family: Helvetica, "sans serif";
   color: #fff;
   margin: 0;
+}
+
+/* Här är styling som gäller för alla rubriker och texter */
+h1 {
+  margin: 20px;
+  font-size: 55px;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 200;
+  margin-bottom: 50px;
+}
+
+h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 15px;
+  font-weight: 200;
+  color: #fff;
 }
 
 /* Här finns all styling för navbar i header */
@@ -103,12 +131,14 @@ header nav a {
   position: fixed;
   top: 0;
   width: 100%;
+  /* Padding på toppen för att förhindra plötslig snabb förflyttning */
 }
 
 .sticky .content {
   padding-top: 60px;
 }
 
+/* Styling av mina knappar (LinkedIn, GitHub & CV) */
 .button-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -133,29 +163,6 @@ header nav a {
   font-weight: 600;
 }
 
-/* Här är styling som gäller för alla rubriker och texter */
-h1 {
-  margin: 20px;
-  font-size: 55px;
-}
-
-h2 {
-  font-size: 40px;
-  font-weight: 200;
-  margin-bottom: 50px;
-}
-
-h3 {
-  font-size: 18px;
-  text-transform: uppercase;
-}
-
-p {
-  font-size: 15px;
-  font-weight: 200;
-  color: #fff;
-}
-
 /* Här är styling för about-me sektionen */
 .about-me {
   background-color: #DDA6B9;
@@ -178,23 +185,15 @@ footer {
   padding: 50px 100px;
 }
 
-/* @media only screen and (min-width: 1000px) {
-    .container {
-        display: flex;
-        margin-right: 10px;
-    }
-
-    .about-me {
-        display:block;
-    }
-  
-}  */
+/* Om något är sant då ska vi läsa in dom här reglerna */
+/* OM skärmen är större än 700px då gäller nedan regler */
 @media only screen and (min-width: 700px) {
   .container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
+  /* Styling av navbar i min header */
   header {
     background-color: rgba(255, 255, 255, 0.5);
   }
