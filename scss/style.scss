@@ -1,4 +1,4 @@
-@import "_variables.scss";
+@import "_variables.scss"; //importerar min fil med variabler som innehåller mina färger
 
 
 
@@ -33,6 +33,14 @@
   border-radius: 50%;
 }
 
+nav a:hover {
+  color:$text-color;
+}
+
+.project-div {
+  @include contentDiv;
+  background-color: $primary-color;
+}
 
 /* Styling av min mail länk */
 .mail {
@@ -213,7 +221,7 @@ footer {
            
     
               .button-wrapper {
-                display:block; //Det börjar på en ny rad och tar upp hela breddenh
+                display:block; //Det börjar på en ny rad och tar upp hela bredden
               }
 
               .project-wrapper {

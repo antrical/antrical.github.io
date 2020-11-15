@@ -1,5 +1,19 @@
 @charset "UTF-8";
 /* Återanvänder till mina infoboxar till hemsidan */
+nav a:hover {
+  color: #fff;
+}
+
+.project-div {
+  background-color: #ACAEC5;
+  color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  max-width: 100%;
+  background-color: #DDA6B9;
+}
+
 /* Styling av min mail länk */
 .mail {
   text-decoration: none;
